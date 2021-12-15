@@ -1,16 +1,17 @@
-# http_error_simulator
+# http_code_status_simulator
 
-## Intro 
+### Intro 
 
 This is a simple HTTP CODE status simulator
 
-## Build
+
+### Build
 
 ```
 docker build -t jenciso/http_status_code_simulator .
 ```
 
-## Run
+### Run
 
 ```
 docker run -it -p 8080:80 jenciso/http_status_code_simulator
