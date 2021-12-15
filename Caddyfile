@@ -1,0 +1,5 @@
+:80 {
+      respond / "Error 500!!!" 500
+      respond /v1 "V1 Ok!!!" 200
+      respond /v2 "V2 Ok!!!" 200
+    }
