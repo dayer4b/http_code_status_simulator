@@ -1,5 +1,87 @@
 :80 {
-      respond / "Error 500!!!" 500
-      respond /v1 "V1 Ok!!!" 200
-      respond /v2 "V2 Ok!!!" 200
+      respond / "use desired status code as path, e.g. /418" 200
+
+      respond /100 "Continue" 100
+      respond /101 "Switching Protocols" 101
+      respond /102 "Processing" 102
+      respond /103 "Early Hints" 103
+
+      respond /200 "OK" 200
+      respond /201 "Created" 201
+      respond /202 "Accepted" 202
+      respond /203 "Non-Authoritative Information" 203
+      respond /204 "No Content" 204
+      respond /205 "Reset Content" 205
+      respond /206 "Partial Content" 206
+      respond /207 "Multi-Status (WebDAV)" 207
+      respond /208 "Already Reported (WebDAV)" 208
+      respond /226 "IM Used" 226
+
+      respond /300 "Multiple Choices" 300
+      respond /301 "Moved Permanently" 301
+      respond /302 "Found" 302
+      respond /303 "See Other" 303
+      respond /304 "Not Modified" 304
+      respond /305 "Use Proxy" 305
+      respond /306 "Unused" 306
+      respond /307 "Temporary Redirect" 307
+      respond /308 "Permanent Redirect" 308
+
+      respond /400 "Bad Request" 400
+      respond /401 "Unauthorized" 401
+      respond /402 "Payment Required" 402
+      respond /403 "Forbidden" 403
+      respond /404 "Not Found" 404
+      respond /405 "Method Not Allowed" 405
+      respond /406 "Not Acceptable" 406
+      respond /407 "Proxy Authentication Required" 407
+      respond /408 "Request Timeout" 408
+      respond /409 "Conflict" 409
+      respond /410 "Gone" 410
+      respond /411 "Length Required" 411
+      respond /412 "Precondition Failed" 412
+      respond /413 "Request Entry Too Large" 413
+      respond /414 "Request-URI Too Long" 414
+      respond /415 "Unsupported Media Type" 415
+      respond /416 "Requested Range Not Satisfiable" 416
+      respond /417 "Expectation Failed" 417
+      respond /418 "I'm a teapot (RFC 2324)" 418
+      respond /420 "Enhance Your Calm (Twitter)" 420
+      respond /422 "Unprocessable Entity (WebDAV)" 422
+      respond /423 "Locked (WebDAV)" 423
+      respond /424 "Failed Dependency (WebDAV)" 424
+      respond /425 "Reserved for WebDAV" 425
+      respond /426 "Upgrade required" 426
+      respond /428 "Precondition Required" 428
+      respond /429 "Too Many Requests" 429
+      respond /431 "Request Header Fields Too Large" 431
+      respond /444 "No Response (Nginx)" 444
+      respond /449 "Retry With (Microsoft)" 449
+      respond /450 "Blocked by Windows Parental Controls (Microsoft)" 450
+      respond /451 "Unavailable For Legal Reasons" 451
+      respond /499 "Client Closed Request (Nginx)" 499
+
+      respond /500 "Internal Server Error" 500
+      respond /501 "Not Implemented" 501
+      respond /502 "ad Gateway" 502
+      respond /503 "Service Unavailable" 503
+      respond /504 "Gateway Timeout" 504
+      respond /505 "HTTP Version Not Supported" 505
+      respond /506 "Variant Also Negotiates (Experimental)" 506
+      respond /507 "Insufficient Storage (WebDAV)" 507
+      respond /508 "Loop Detected (WebDAV)" 508
+      respond /509 "Bandwidth Limit Exceeded (Apache)" 509
+      respond /510 "Not Extended" 510
+      respond /511 "Network Authentication Required" 511
+      respond /520 "Web server is returning an unknown error" 520
+      respond /522 "Connection timed out" 522
+      respond /524 "A timeout occurred" 524
+      respond /598 "Network read timeout error" 598
+      respond /599 "Network connect timeout error" 599
+
+      log {
+            format console
+            level debug
+      }
     }
+
